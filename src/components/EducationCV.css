@@ -1,0 +1,147 @@
+/* Category-Wise Curriculum Vitae Styling */
+#cv {
+  background: var(--bg-main);
+  color: var(--text-body);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cv-category-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: var(--card-shadow);
+  height: 100%;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.cv-category-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+}
+
+.cv-category-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(13, 110, 253, 0.25);
+}
+
+.cv-category-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  background: rgba(13, 110, 253, 0.15);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.cv-category-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 0;
+}
+
+.cv-item {
+  background: rgba(13, 110, 253, 0.04);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.cv-item-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-heading);
+}
+
+.cv-item-subtitle {
+  color: var(--primary-color);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.cv-item-meta {
+  font-size: 0.9rem;
+  color: var(--text-body);
+}
+
+/* Explicit Dark Mode High-Contrast Colors */
+.theme-dark #cv .cv-category-title,
+.theme-dark #cv .cv-item-title,
+.theme-dark #cv strong,
+.theme-dark #cv h3,
+.theme-dark #cv h4,
+.theme-dark #cv h6 {
+  color: #ffffff !important;
+}
+
+.theme-dark #cv p,
+.theme-dark #cv li,
+.theme-dark #cv .text-muted,
+.theme-dark #cv .cv-item-meta {
+  color: #cbd5e1 !important;
+}
+
+.theme-dark #cv .cv-item-subtitle {
+  color: #60a5fa !important;
+}
+
+.theme-dark #cv .cv-skill-pill {
+  background: rgba(13, 110, 253, 0.2);
+  border: 1px solid rgba(96, 165, 250, 0.4);
+  color: #93c5fd;
+}
+
+/* Explicit Light Mode High-Contrast Colors */
+.theme-light #cv .cv-category-title,
+.theme-light #cv .cv-item-title,
+.theme-light #cv strong,
+.theme-light #cv h3,
+.theme-light #cv h4,
+.theme-light #cv h6 {
+  color: #0f172a !important;
+}
+
+.theme-light #cv p,
+.theme-light #cv li,
+.theme-light #cv .text-muted,
+.theme-light #cv .cv-item-meta {
+  color: #334155 !important;
+}
+
+.theme-light #cv .cv-item-subtitle {
+  color: #0d6efd !important;
+}
+
+.theme-light #cv .cv-skill-pill {
+  background: rgba(13, 110, 253, 0.08);
+  border: 1px solid rgba(13, 110, 253, 0.25);
+  color: #0d6efd;
+}
+
+.cv-skill-pill {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 575.98px) {
+  .cv-category-card {
+    padding: 1.25rem;
+  }
+}

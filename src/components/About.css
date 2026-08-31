@@ -1,0 +1,47 @@
+/* About Section Component Styling */
+#about {
+  background: var(--bg-main);
+  color: var(--text-body);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#about h4,
+#about h5 {
+  color: var(--text-heading);
+}
+
+#about p {
+  color: var(--text-muted);
+}
+
+#about .img,
+#about img,
+.hire-text h2 {
+  position: relative;
+}
+
+/* Timeline background line */
+#about .img::before {
+  content: "";
+  left: 50%;
+  width: 4px;
+  position: absolute;
+  height: calc(100% + 140px);
+  background: var(--timeline-line);
+  transition: background-color 0.3s ease;
+}
+
+#about img,
+#about .hire-text h2 {
+  width: 140px;
+}
+
+#about .hire-text h2 {
+  height: 140px;
+}
+
+@media (max-width: 767.98px) {
+  #about .img::before {
+    display: none;
+  }
+}
