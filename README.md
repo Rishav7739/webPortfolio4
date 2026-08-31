@@ -113,9 +113,3 @@ In the project directory, you can run:
 **Rishav Raj**
 - GitHub: [@Rishav7739](https://github.com/Rishav7739)
 - Repository: [webPortfolio4](https://github.com/Rishav7739/webPortfolio4.git)
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
